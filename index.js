@@ -16,6 +16,26 @@ module.exports = function load (src, opts, cb) {
   script.async = 'async' in opts ? !!opts.async : true
   script.src = src
 
+  if ('defer' in opts) {
+    script.defer = !!opts.defer
+  }
+
+  if ('nomodule' in opts) {
+    script.nomodule = !!opts.nomodule
+  }
+
+  if (opts.integrity) {
+    script.integrity = opts.integrity
+  }
+
+  if (opts.nonce) {
+    script.nonce = opts.nonce
+  }
+
+  if (opts.crossorigin) {
+    script.crossorigin = opts.crossorigin
+  }
+
   if (opts.attrs) {
     setAttributes(script, opts.attrs)
   }
