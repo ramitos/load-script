@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git://github.com/eldargab/load-script"
   },
+  "main": "index.js",
   "scripts": {
     "test": "zuul -- test/index.js",
     "test-local": "zuul --local 9005 -- test/index.js"
