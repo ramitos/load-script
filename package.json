@@ -1,7 +1,7 @@
 {
   "name": "@ramitos/load-script",
   "description": "Dynamic script loading for browser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "browser",
     "script",
