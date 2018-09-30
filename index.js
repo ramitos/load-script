@@ -21,7 +21,7 @@ module.exports = function load (src, opts, cb) {
   }
 
   if ('nomodule' in opts) {
-    script.nomodule = !!opts.nomodule
+    script.noModule = !!opts.nomodule
   }
 
   if (opts.integrity) {
